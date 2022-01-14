@@ -15,7 +15,8 @@ namespace VehicleTracking.Repositories.Implementations
 
         public virtual async Task AddAsync(T entity)
         {
-            DbSet.Add(entity);
+            await DbSet.AddAsync(entity);
+            Context.SaveChanges();
         }
 
         public virtual async Task<T> GetByIdAsync(int id)

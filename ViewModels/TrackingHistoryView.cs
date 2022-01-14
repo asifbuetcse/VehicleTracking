@@ -3,12 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VehicleTracking.ViewModels
 {
-    public class TrackingCurrent
+    public class TrackingHistoryView
     {
-
         public int TrackingId { get; set; }
-        public DateTime DateTime { get; set; }    
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
+        public DateTime Date { get; set; }
+        public string HistoryForOneDay { get; set; }
+        public virtual int VehicleId { get; set; }      
     }
 }

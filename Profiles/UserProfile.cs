@@ -6,10 +6,10 @@ namespace VehicleTracking.Profiles
     {
         public UserProfile()
         {
-            CreateMap<DataModels.User, ViewModels.User>();
-            CreateMap<DataModels.Vehicle, ViewModels.Vehicle>();
-            CreateMap<DataModels.TrackingCurrent, ViewModels.TrackingCurrent>();
-            CreateMap<DataModels.TrackingHistory, ViewModels.TrackingHistory>();
+            CreateMap<DataModels.User, ViewModels.UserView>();
+            CreateMap<DataModels.Vehicle, ViewModels.VehicleView>();
+            CreateMap<DataModels.TrackingCurrent, ViewModels.TrackingCurrentView>();
+            CreateMap<DataModels.TrackingHistory, ViewModels.TrackingHistoryView>();
         }
     }
 }

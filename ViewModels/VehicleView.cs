@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VehicleTracking.ViewModels
 {
-    public class Vehicle
+    public class VehicleView
     {
         [Key]
         [MaxLength(40)]

@@ -4,9 +4,9 @@ using VehicleTracking.Queries;
 using VehicleTracking.Repositories.Interfaces;
 using VehicleTracking.ViewModels;
 
-namespace VehicleTracking.Handlers
+namespace VehicleTracking.Handlers.QueryHandler
 {
-    public class GetAllUsersHandler : IRequestHandler<GetAllUsersQuery, List<User>>
+    public class GetAllUsersHandler : IRequestHandler<GetAllUsersQuery, List<UserView>>
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
@@ -16,10 +16,10 @@ namespace VehicleTracking.Handlers
             _mapper = mapper;
             _userRepository = userRepository;
         }
-        public async Task<List<User>> Handle(GetAllUsersQuery request, CancellationToken cancellationToken)
+        public async Task<List<UserView>> Handle(GetAllUsersQuery request, CancellationToken cancellationToken)
         {
             var users = await _userRepository.GetAllAsync();
-            return _mapper.Map<List<User>>(users);
+            return _mapper.Map<List<UserView>>(users);
         }
     }
 }
