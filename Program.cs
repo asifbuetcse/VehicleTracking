@@ -1,10 +1,6 @@
 using MediatR;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
-using System.Text;
 using VehicleTracking.DataModels;
 using VehicleTracking.Repositories.Implementations;
 using VehicleTracking.Repositories.Interfaces;

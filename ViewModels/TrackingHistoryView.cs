@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace VehicleTracking.ViewModels
+﻿namespace VehicleTracking.ViewModels
 {
     public class TrackingHistoryView
     {

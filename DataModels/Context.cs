@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 namespace VehicleTracking.DataModels
 {
     public class Context: DbContext

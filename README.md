@@ -7,11 +7,11 @@ The solutions use the following framework:
 
 ## NuGet Packages Used
 
-Microsoft.EntityFrameworkCore.Tools
-Microsoft.EntityFrameworkCore.Design
-Microsoft.EntityFrameworkCore.SqlServer
-MediatR
-AutoMapper
+	-Microsoft.EntityFrameworkCore.Tools
+	-Microsoft.EntityFrameworkCore.Design
+	-Microsoft.EntityFrameworkCore.SqlServer
+	-MediatR
+	-AutoMapper
 
 ## Performance
 

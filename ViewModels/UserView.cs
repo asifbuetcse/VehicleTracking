@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using VehicleTracking.Enums;
-
-namespace VehicleTracking.ViewModels
+﻿namespace VehicleTracking.ViewModels
 {
     public class UserView
     {

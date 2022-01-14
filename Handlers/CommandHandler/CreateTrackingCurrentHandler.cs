@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using VehicleTracking.Commands;
-using VehicleTracking.Queries;
 using VehicleTracking.Repositories.Interfaces;
 using VehicleTracking.ViewModels;
 namespace VehicleTracking.Handlers.CommandHandler

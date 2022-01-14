@@ -1,9 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Web.Http;
 using VehicleTracking.Commands;
 using VehicleTracking.DataModels;
-using VehicleTracking.Enums;
 using VehicleTracking.Queries;
 
 namespace VehicleTracking.Controllers
