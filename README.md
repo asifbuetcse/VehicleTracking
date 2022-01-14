@@ -16,6 +16,7 @@ AutoMapper
 ## Performance
 
 The performace of the application is ensured by the implementation of 3 things mainly.
+
 	- CQRS Pattern
 	- Mediator Pattern
 	- Async/Await in Data manipulation
@@ -39,6 +40,7 @@ or update an entry.
 
 After ensuring all the necessary packages has been installed; The application is ready to go.
 The implemented enpoints are - 
+
 	user/GetAllUsers
 	user/GetUserById/{id}
 	user/CreateUser [Post Endpoint]
