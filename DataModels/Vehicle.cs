@@ -8,7 +8,7 @@ namespace VehicleTracking.DataModels
         [Key]
         public int VehicleId { get; set; }
         [MaxLength(40)]
-        private string licenseNumber { get; set; }
+        public string LicenseNumber { get; set; }
         [Display(Name = "User")]
         public virtual int UserId { get; set; }
         [ForeignKey("UserId")]

@@ -7,6 +7,7 @@ namespace VehicleTracking.DataModels
     {
         [Key]
         public int TrackingId { get; set; }
+        [Column(TypeName = "datetime")]
         public DateTime DateTime { get; set; }
         [MaxLength(10)]
         public string Longitude { get; set; }

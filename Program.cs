@@ -15,6 +15,8 @@ builder.Services.AddDbContext<Context>(options =>options.UseSqlServer());
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
+builder.Services.AddScoped<ITrackingCurrentRepository, TrackingCurrentRepository>();
 
 var app = builder.Build();
 

@@ -7,7 +7,6 @@ namespace VehicleTracking.ViewModels
     {
         [Key]
         [MaxLength(40)]
-        private string licenseNumber { get; set; }
-        public int UserId { get; set; }
+        public string licenseNumber { get; set; }
     }
 }
