@@ -7,6 +7,7 @@ namespace VehicleTracking.DataModels
     {
         [Key]
         public int UserId { get; set; }
+        public string UserName { get; set; }
         [MaxLength(40)]
         public string Email { get; set; }
         [MaxLength(80)]

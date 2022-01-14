@@ -15,24 +15,6 @@ builder.Services.AddDbContext<Context>(options =>options.UseSqlServer());
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-//builder.Services.AddAuthentication(x =>
-//{
-//    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-//    x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-//    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-//}).AddJwtBearer(x =>
-//   {
-//       x.SaveToken = true;
-//       x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-//       {
-//           ValidateIssuerSigningKey = true,
-//           IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")),
-//           ValidateIssuer = false,
-//           ValidateAudience = false,
-//           RequireExpirationTime = false,
-//           ValidateLifetime = true
-//       };
-//   });
 
 var app = builder.Build();
 
