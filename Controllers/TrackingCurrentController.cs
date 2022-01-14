@@ -16,10 +16,7 @@ namespace VehicleTracking.Controllers
         {
             _mediator = mediator;
         }
-        public string Index()
-        {
-            return "";
-        }
+
         [Microsoft.AspNetCore.Mvc.HttpGet]
         public async Task<IActionResult> GetAllTrackingCurrents()
         {
